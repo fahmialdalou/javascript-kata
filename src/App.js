@@ -55,9 +55,9 @@ class App extends Component {
         
         const isbn=document.getElementById("searchByisbn").value
 
-        if(isbn != ''){
+        if(isbn !== ''){
             const allMaterials = this.state.allMaterials.filter(
-                c => c.isbn == isbn
+                c => c.isbn === isbn
             )
             if(allMaterials.length >0){this.setState({allMaterials})}else{
                 alert('Not found please try again!')
@@ -72,7 +72,7 @@ class App extends Component {
         
         const email=document.getElementById("searchByEmail").value
 
-        if(email != ''){
+        if(email !== ''){
             const allMaterials = this.state.allMaterials.filter(
                 c => c.authors.includes(email)
             )
