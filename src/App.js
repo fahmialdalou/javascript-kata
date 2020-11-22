@@ -3,7 +3,6 @@ import Papa from 'papaparse';
 import books from './data/books.csv'
 import magazines from './data/magazines.csv'
 
-
 class App extends Component {
 
     constructor(props) {
